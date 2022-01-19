@@ -2,12 +2,112 @@
 *{
     margin: 0px;
 }
+/* nav bar */
+body{
+    font-family: sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    z-index: 1;
+    margin-top: 5px;
+}
+.nav-left-part{
+    margin-left: 200px;
+    margin-top: 5px;
+}
+.nav-left-part a{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 2;
+}
+.nav-left-part span{
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 3px;
+    color: #08d9d6 !important;
+}
+.nav-right-part{
+    margin-right: 214px;
+    margin-top: 0px;
+}
+.nav-right-part > ul{
+   text-decoration: none;
+   display: flex;
+   list-style-type: none;
+}
+.nav-right-part > ul > li{
+    margin: 12px 10px 0px 0px;
+    padding: 9px;
+    cursor: pointer;
+}
+.nav-right-part li > a{
+    font-size: 14px;
+    color: white;
+}
+.nav-right-part a{
+    text-decoration: none;
+}
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0; 
+    display: inline-block; 
+    padding: 2px;
+    cursor: pointer;
+    margin: 0px 0px 0px 10px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.nav-right-part .dropdown-inside-ul{
+    background-color: white;
+    color: black;
+    width: 9%;
+    margin-left: -10px;
+    height: 155px;
+    margin-top: 9.9px;
+    position: absolute;
+    display: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+.hover-test:hover .dropdown-inside-ul , .dropdown-inside-ul{
+    display: block;
+    cursor: pointer;
+}
+.nav-right-part .dropdown-inside-ul > li{
+    text-align: left;
+    margin-left: -10px;
+    margin-top: 15px;
+}
+.nav-right-part .dropdown-inside-ul a{
+    color: black;
+    text-align: left;
+}
+.menu-two-angel{
+    margin-left: 65px;
+    border: solid black;
+    border-width: 0 2px 2px 0; 
+    display: inline-block; 
+    padding: 1.5px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+/* nav bar end */
 
 .header_bg_image{
     height: 700px;
     width: 100%;
     background-size: cover;
     background-position: center;
+    margin-top: -70px;
+    background-image: url("https://preview.colorlib.com/theme/travel2/images/xslider-1.jpg.pagespeed.ic.WRHModZqO2.webp");
 }
 
 .intro {
