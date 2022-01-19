@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display&display=swap");
+
+.main-wrapper {
+  height: 100vh;
+  min-height: 670px;
+  position: relative;
+}
+
+body {
+  margin: 0px;
+}
+.main-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.travel {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.service {
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  z-index: 3;
+}
+
+.desc {
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+}
+
+.para {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.btn-start {
+  background-color: #09ede9;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  font-size: 14px;
+  border: none;
+}
+
+.img-row {
+  padding: 70px 0;
+}
+
+.row-wrapper {
+  width: 100%;
+  /* padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; */
+}
+
+.parent-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  justify-content: center;
+}
+
+.row-child {
+  /* flex: 0 0 25%;
+  width: 25%; */
+  width: 15%;
+  margin: 20px;
+}
+
+.row-child img {
+  width: 100%;
+  height: auto;
+}
+
+.img-desc h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.img-desc p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+
+@media screen and (max-width: 986px) {
+  .row-child {
+    width: 35%;
+  }
+}
