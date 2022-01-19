@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+*{
+    margin: 0px;
+}
+
+.header_bg_image{
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro {
+  max-width: 55%; 
+  position: absolute;
+  top: 45%;
+  left: 26%;
+  text-align: center;
+}
+.intro h1{
+    font-size: 2.5rem;
+     color:rgb(255, 255, 255);
+}
+.intro p{
+    font-size: 14px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   color:rgb(255, 255, 255);
+   font-weight: 400;
+}
+.intro button{
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px;
+  width: 120px;
+  color:rgb(255, 255, 255);
+  vertical-align: middle;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(8, 217, 214);
+}
+
+/* css of sliding */
+.demo_class{
+    height: 700px;
+    width: 85%;
+    margin: 7%;
+    margin-bottom: 4%;
+}
+
+/* form start here*/
+#form_mid{
+   display: grid;
+   gap: 0px;
+   margin-left: 7%;
+   margin-right: 7%;
+}
+.Accordion{
+    border: 1px solid red;
+    width: 80%;
+    padding: 40px;
+    grid-area: Accordion;
+}
+
+.form{
+   border: 1px solid red; 
+   width: 70%;
+   padding: 40px;
+   grid-area: form;
+   margin-right: 7%;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.Accordion h1{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(33, 37, 41);
+    box-sizing: border-box;
+    text-align: left;
+    padding: 2px;
+   font-family: "Playfair Display", serif
+}
+
+.Accordion button{
+    border: none;
+    background-color: #ffff;
+    cursor:pointer;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    padding: 40px 15px 15px 0px;
+}
+
+.gallery{
+   display: flex;
+}
+
+.gallery img{
+    height: 45%;
+    width: 30%;
+    border-radius: 4px;
+} 
+.bank{
+    margin: 0px;
+    padding: 0px;
+}
+
+#first_name{
+    padding: 10px;
+
+}
+#last_name{
+    padding: 10px;
+}
+
+#mail{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+.mail_label{
+    margin: 10px;
+}
+#massage{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+}
+
+.selcector_box{
+    width: 97%;
+    padding: 10px;
+    margin: 10px;
+}
+.check_box{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+.check_box_custom{
+    margin: 10px;
+}
+
+#Submit_btn{
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px;
+  width: 120px;
+  color:rgb(255, 255, 255);
+  vertical-align: middle;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(8, 217, 214);
+  margin: 10px;
+}
+
+#social_icon{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+#slider_1 img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+}
+#slider_2 img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+}
+#slider_3 img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+}
+
+@media screen and (min-width:1000px) {
+    #form_mid{
+        grid-template-areas: 'Accordion form';
+    }
+}
+@media screen and (max-width:1000px) {
+    #form_mid{
+        grid-template-areas: 'Accordion' 
+                            'form';
+    }
+}
+/* our Team Css */
+/*
+.Team_of_Co{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    justify-content: center;
+    margin: 10px;
+}
+.Team_of_Co img{
+      height: 200px;
+      width: 200px;
+}
+.form_mid+h1{
+    text-align: center;
+    margin: 50px;
+} */
