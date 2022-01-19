@@ -1,0 +1,66 @@
+.underline{
+    background-color:#20B2AA;
+    width: 65px;
+    height: 4px;
+}
+.accordion{
+    max-width: 500px;
+}
+.accordion .contentBox
+{
+position: relative;
+margin: 10px 20px;
+
+}
+.accordion .contentBox .label
+{
+    position: relative;
+    padding-left: 10px;
+    color: gray;
+    cursor: pointer;
+   
+}
+
+.accordion .contentBox .label::before
+{
+    content: '+ ';
+    font-size: 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.accordion .contentBox.active .label::before{
+
+    content: '- ';
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.accordion .contentBox .content
+{
+    position: relative;
+    padding:10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+.accordion .contentBox.active .content
+{
+    height: auto;
+    padding:10px;
+    background-color:#F8F8FF ;
+}
+.accordion .contentBox.active .label{
+     color: #20B2AA;
+}
+
+#mid-section{
+   
+    display: flex;
+
+}
+#gallery-section{
+
+    display: flex;
+}
