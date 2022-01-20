@@ -1,3 +1,10 @@
+
+.whole-mid{
+
+    padding: 5%;
+    
+}
+
 .underline{
     background-color:#20B2AA;
     width: 65px;
@@ -60,7 +67,51 @@ margin: 10px 20px;
     display: flex;
 
 }
+.mid-image-part{
+
+    display: flex;
+}
 #gallery-section{
 
     display: flex;
+}
+
+.Team_of_Co{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    justify-content: center;
+    margin: 10px;
+}
+.Team_of_Co img{
+    height: 250px;
+    width: 250px;
+
+    margin-top: 15%;
+}
+.form_mid+h1{
+    text-align: center;
+    margin: 50px;
+}
+.team-head{
+    
+    margin-left: auto;
+    text-align: center;
+    
+}
+/* css of sliding */
+.demo_class{
+    height: 400px;
+    width: 100%;
+    margin: 10%;
+    margin-top: 23%;
+    
+   
+}
+.gallery{
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+.p-team{
+    font-family: "Lato",sans-serif;
 }

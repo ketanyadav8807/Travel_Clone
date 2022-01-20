@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+P+One&family=Playfair+Display&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#footer{
+    padding: 40px;
+    display: grid;
+    gap: 20px;
+    background-color: #F8F9FA;
+}
+.About_para{
+    grid-area: About_para;
+    margin: 20px;
+}
+.About_para h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.About_para p{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    padding: 8px;
+    padding-left: 0px;
+}
+.About_para_logo{
+   height: 30px;
+   width: 30px;
+}
+.pages_list{
+    grid-area: pages_list;
+    margin: 20px;
+}
+.pages_list h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.page_list_blog{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px;
+    margin-bottom: 10px;
+    text-size-adjust: 100%;
+}
+.pages_list li{
+    list-style-type:none;
+}
+.pages_list a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+}
+.resources_list{
+    grid-area: resources_list;
+    margin: 20px;
+}
+.resources_list h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.resources_list li{
+    list-style-type: none;
+}
+.resources_list a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+}
+
+.contact_list li{
+    list-style-type: none;
+}
+
+.contact_list h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.contact_list{
+      grid-area: contact_list;
+      margin: 20px;
+}
+
+.contact_list img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+/* term condition */
+.copy_write p{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    padding: 8px;
+    padding-left: 15px;
+}
+.Term_condi a{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    padding: 8px;
+    padding-left: 0px;
+}
+.policy_flex{
+    display: flex;
+}
+@media only screen and (max-width: 992px) {
+    #footer{
+        grid-template-areas: 'About_para pages_list' 
+        'resources_list contact_list';
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #footer{
+        grid-template-areas: 'About_para'
+        'pages_list' 
+        'resources_list' 
+        'contact_list'
+        'copy_write'
+        'Term_condi';
+    }
+    .Term_condi a{
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #footer{
+        grid-template-areas: 'About_para pages_list resources_list contact_list';
+    }
+    .policy_flex{
+        margin-left: 100%;
+    }
+}
+
+
