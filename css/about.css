@@ -1,4 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+P+One&family=Playfair+Display&display=swap');
 
+/* header*/
+
+.intro {
+    max-width: 55%; 
+    position: absolute;
+    top: 45%;
+    left: 26%;
+    text-align: center;
+}
+.intro h1{
+      font-size: 2.5rem;
+       color:rgb(255, 255, 255);
+}
+.intro p{
+      font-size: 14px;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+     color:rgb(255, 255, 255);
+     font-weight: 400;
+}
+.intro button{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px;
+    width: 120px;
+    color:rgb(255, 255, 255);
+    vertical-align: middle;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(8, 217, 214);
+}
+
+.header_bg_image{
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: -70px;
+    background-image: url("https://preview.colorlib.com/theme/travel2/images/xslider-1.jpg.pagespeed.ic.WRHModZqO2.webp");
+}
 .whole-mid{
 
     padding: 5%;
@@ -46,7 +90,7 @@ margin: 10px 20px;
 .accordion .contentBox .content
 {
     position: relative;
-    padding:10px;
+    padding: 3px;
     height: 0;
     overflow: hidden;
     transition: 0.5s;
@@ -115,3 +159,173 @@ margin: 10px 20px;
 .p-team{
     font-family: "Lato",sans-serif;
 }
+/*footer*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#footer{
+    padding: 40px;
+    display: grid;
+    gap: 20px;
+    background-color: #F8F9FA;
+}
+.About_para{
+    grid-area: About_para;
+    margin: 20px;
+}
+.About_para h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.About_para p{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    padding: 8px;
+    padding-left: 0px;
+}
+.About_para_logo{
+   height: 30px;
+   width: 30px;
+}
+.pages_list{
+    grid-area: pages_list;
+    margin: 20px;
+}
+.pages_list h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.page_list_blog{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px;
+    margin-bottom: 10px;
+    text-size-adjust: 100%;
+}
+.pages_list li{
+    list-style-type:none;
+}
+.pages_list a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+}
+.resources_list{
+    grid-area: resources_list;
+    margin: 20px;
+}
+.resources_list h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.resources_list li{
+    list-style-type: none;
+}
+.resources_list a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+}
+
+.contact_list li{
+    list-style-type: none;
+}
+
+.contact_list h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.contact_list{
+      grid-area: contact_list;
+      margin: 20px;
+}
+
+.contact_list img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+/* term condition */
+.copy_write p{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    padding: 8px;
+    padding-left: 15px;
+}
+.Term_condi a{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    padding: 8px;
+    padding-left: 0px;
+}
+.policy_flex{
+    display: flex;
+}
+@media only screen and (max-width: 992px) {
+    #footer{
+        grid-template-areas: 'About_para pages_list' 
+        'resources_list contact_list';
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #footer{
+        grid-template-areas: 'About_para'
+        'pages_list' 
+        'resources_list' 
+        'contact_list'
+        'copy_write'
+        'Term_condi';
+    }
+    .Term_condi a{
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #footer{
+        grid-template-areas: 'About_para pages_list resources_list contact_list';
+    }
+    .policy_flex{
+        margin-left: 100%;
+    }
+}
+
+
+
