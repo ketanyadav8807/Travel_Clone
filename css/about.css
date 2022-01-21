@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+P+One&family=Playfair+Display&display=swap');
-<<<<<<< HEAD
- 
-=======
->>>>>>> 29ba5f4839b19a173feb4bfb42571b37ad03dec7
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+
+h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 350;
+    font-size: xx-large;
+}
 /* header*/
 
 .intro {
@@ -54,8 +57,9 @@
 }
 
 .underline{
-    background-color:#20B2AA;
-    width: 65px;
+    background-color:#08d9d6;
+    margin-top: 10px;
+    width: 80px;
     height: 4px;
 }
 .accordion{
@@ -103,17 +107,21 @@ margin: 10px 20px;
 .accordion .contentBox.active .content
 {
     height: auto;
-    padding:10px;
+    padding: 10px;
     background-color:#F8F8FF ;
 }
 .accordion .contentBox.active .label{
-     color: #20B2AA;
+     color: #08d9d6;
 }
 
 #mid-section{
    
     display: flex;
 
+}
+.text-part{
+
+    padding-left: 9%;
 }
 .mid-image-part{
 
@@ -125,16 +133,20 @@ margin: 10px 20px;
 }
 
 .Team_of_Co{
-    display: grid;
-    grid-template-columns: repeat(4,20%);
+    display: flex;
     justify-content: center;
-    margin: 10px;
+    
 }
 .Team_of_Co img{
     height: 250px;
     width: 250px;
-
+    margin: 10px;
     margin-top: 15%;
+}
+.Team_of_Co h3{
+
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
 }
 .form_mid+h1{
     text-align: center;
@@ -149,16 +161,20 @@ margin: 10px 20px;
 /* css of sliding */
 .demo_class{
     height: 400px;
-    width: 100%;
+    width: 120%;
     margin: 10%;
     margin-top: 23%;
+    padding-left: 9%;
     
    
 }
 .gallery{
     width: 20%;
-    margin-left: 10%;
-    margin-top: 8%;
+    margin-left: 20%;
+    margin-top: 9%;
+}
+.gallery p{
+    margin-top: 5%;
 }
 .p-team{
     font-family: "Lato",sans-serif;
@@ -306,6 +322,7 @@ margin: 10px 20px;
         grid-template-areas: 'About_para pages_list' 
         'resources_list contact_list';
     }
+    
 }
 
 @media only screen and (max-width: 760px) {
