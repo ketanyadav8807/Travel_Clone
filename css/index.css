@@ -138,6 +138,8 @@ body{
     margin-top: 418px;
 }
 /*  */
+
+
 /* nav media */
 #hamIcon{
     display: none;
@@ -146,9 +148,7 @@ body{
     display: none;
 }
 @media only screen and (max-width: 992px){
-    body{
-        background-color: red;
-    }
+    /* nav */
     .nav-right-part{
         display: none;
     }
@@ -222,5 +222,109 @@ body{
     #home-anchor{
         color: #08d9d6 !important;
     }
+    /* nav */
+
+    .h{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #mid-text{
+        /* color: white;
+        text-align: center;
+        width: 50%;
+        position: absolute;
+        margin: 300px 0px 0px 350px;
+        font-family: none;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 42px; */
+        position: initial;
+        width: 70%;
+        margin: 335px auto 0px;
+    }
+    .contact-us-btn{
+        /* border: 0px;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
+        background-color: #08d9d6;
+        border-radius: 29px;
+        width: 8%;
+        margin-left: 700px;
+        margin-top: 418px; */
+        /* position: initial; */
+        margin: unset;
+        padding: unset;
+        width: 127px;
+        height: 47px;
+        margin: 20px auto 0px;
+    }
+    .first-form-test{
+        display: flex;
+        justify-content: center;
+        /* border: 12px solid black; */
+    }
+   .form-main-div{
+        width: 720px;
+        /* width: 100%; */
+        height: 134px;
+        padding: 30px;
+        margin-top: -50px;
+        background-color: white;
+        box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
+        /* border: 2px solid red; */
+   }
+   .test-d{
+    width: 100%;
+    height: 134px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid green; */
+   }
+   .outer-input{
+        width: 45%; 
+        margin: auto;
+        /* border: 2px solid red; */
+    }
+   .select{
+    border: 2px solid #e9ecef;
+    font-size: 16px;
+    height: 45px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    border-radius: 0.25rem;
+    width: 100%;
+   }
+   #date , #name , #search-button{
+    border: 2px solid #e9ecef;
+    font-size: 16px;
+    height: 45px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    border-radius: 0.25rem;
+    width: 100%;
+    margin: 12px;
+    }
+    #search-button{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 30px;
+        font-size: 14px;
+        background-color: #08d9d6;
+        cursor: pointer;
+    }
+    .white{
+        height: 50px;
+        background-color: white;
+    }
 }
+
+
 /* nav media end */
