@@ -10,46 +10,61 @@ setInterval(function () {
         i = 0;
     }
     document.getElementsByClassName("demo_class")[0].src = img[i];
-}, 5000);
+}, 2000);
 
-// inside form
-var x = 0;
-function register() {
-    if (x % 2 === 0) {
-        document.getElementById("register").style.display = "block";
-        x++;
+// paragraph
+const accordion = document.getElementsByClassName("contentBox")
+console.log(accordion);
+ for(var j=0;j<accordion.length;j++){
 
-    } else {
-        document.getElementById("register").style.display = "none";
-        x++;
-    }
-}
-
-var y = 0
-function paypal() {
-    if (y % 2 === 0) {
-        document.getElementById("paypal").style.display = "block";
-        y++;
-    } else {
-        document.getElementById("paypal").style.display = "none";
-        y++;
-    }
-}
-
-var z = 0;
-function bank() {
-    if (z % 2 === 0) {
-        document.getElementById("bank").style.display = "block";
-        z++;
-    } else {
-        document.getElementById("bank").style.display = "none";
-        z++;
-    }
-
-}
+    accordion[j].addEventListener('click',function(){
+        this.classList.toggle('active')
+    })
+ }
 
 // review slider
+var img1 = ["https://preview.colorlib.com/theme/travel2/images/xperson_2.jpg.pagespeed.ic.mgeTnVW6ZA.webp",
+    "https://preview.colorlib.com/theme/travel2/images/xperson_3.jpg.pagespeed.ic.AKCDWmwHvl.webp",
+    "https://preview.colorlib.com/theme/travel2/images/xperson_4.jpg.pagespeed.ic.zKDyucUl4V.webp"]
+var name = ["Adam Anderson", "Lukas Devlin", "Adam Anderson"];
 
+
+var i = -1
+setInterval(function () {
+    i++
+    if (i === img1.length) {
+        i = 0;
+    }
+    document.getElementsByClassName("slider_1")[0].src = img1[i];
+    if (i === 0) {
+        document.querySelector("#slider_box>h2").innerText = "Adam Anderson";
+    } else if (i === 1) {
+        document.querySelector("#slider_box>h2").innerText = "Lukas Devlin";
+    } else if(i===2) {
+        document.querySelector("#slider_box>h2").innerText = "Adam Anderson";
+    }
+}, 3000);
+
+// nav bar
+
+var ham = document.getElementById("hamIcon");
+ham.addEventListener("click" , add_class_nav_right);
+
+function add_class_nav_right(){
+    var ham = document.getElementById("hamIcon");
+    var nav_right = document.querySelector(".nav-right-part");
+    nav_right.classList.toggle("nav-append");
+    ham.style.display = "none";
+    // console.log(nav_right)
+}
+var cross = document.getElementById("cross");
+cross.addEventListener("click", cross_nav);
+
+function cross_nav(){
+    var remove_nav = document.querySelector(".nav-append");
+    remove_nav.classList.remove("nav-append");
+    ham.style.display = "block";
+}
 
 
 

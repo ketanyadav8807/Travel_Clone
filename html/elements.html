@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="../css/elements.css">
     <script src="../javaScript/elements.js"></script>
 </head>
-
 <body>
     <!-- Nav bar -->
     <nav class="nav">
-        <div class="nav-left-part"><a href="../html/index.html">Travel</a><span>.</span></div>
+        <div class="nav-left-part"><a href="../html/index.html" class="trav">Travel</a><span>.</span></div>
+        <div id="hamIcon">&#9776</div>
         <div class="nav-right-part">
+            <div id="cross">X</div>
             <ul>
-                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/index.html" id="home-anchor">Home</a></li>
                 <li class="hover-test">
                     <a href="" class="dropdown-hover">Dropdown</a>
                     <i class="arrow down dropdown-hover"></i>
@@ -34,60 +35,80 @@
         </div>
     </nav>
     <!-- Header part bg image -->
-    <div class="main_header">
+    <div class="header_bg_image">
         <div class="intro">
             <h1>elements</h1>
             <p>
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind <br>texts.
+                blind
+                <br>texts.
                 Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
             </p>
             <p>
                 <button>Get Started</button>
             </p>
         </div>
-        <!-- <img class="header_bg_image"
-            src="https://preview.colorlib.com/theme/travel2/images/xslider-1.jpg.pagespeed.ic.WRHModZqO2.webp"
-            alt="image"> -->
-        <div class="header_bg_image">
-            
-        </div>
     </div>
-
-
     <!-- bottom of head sliding images -->
     <div class="sliding_image">
         <img class="demo_class" />
     </div>
 
     <!-- here i work on form mid and accordion -->
-    <!-- <div id="form_mid">
-        <div class="Accordion">
-            <h1>Accordion</h1>
-            <button onclick="register()">+ How to download and register?</button><br>
-            <p id="register">
-                Far far away, behind the word mountains, <br>
-                far from the countries Vokalia and Consonantia,<br>
-                there live the blind texts.Separated they live in <br>
-                Bookmarksgrove right at the coast of the Semantics,<br>
-                a large language ocean.
-            </p>
-            <button onclick="paypal()">+ How to create your paypal account?</button><br>
-            <p id="paypal">
-                "A small river named Duden flows by their place <br>
-                and supplies it with the necessary regelialia. It <br>
-                is a paradisematic country, in which roasted parts <br>
-                of sentences fly into your mouth.
-            </p>
-            <button onclick="bank()">+ How to link your paypal and bank account?</button>
-            <p id="bank">
-                When she reached the first hills of the Italic Mountains,<br>
-                she had a last view back on the skyline of her home town <br>
-                Bookmarksgrove, the headline of Alphabet Village and <br>
-                the subline of her own road, the Line Lane. Pityful a rethoric<br>
-                question ran over her cheek, then she continued her way.
-            </p>
-            <h1>Gallery</h1>
+
+    <div id="form_mid">
+        <div id="Accord">
+            <!--  -->
+            <div class="text-part">
+                <h1 class="headings">Accordion</h1>
+                <div class="underline_Accordion"></div>
+                <br />
+                <div class="accordion">
+                    <div class="contentBox">
+                        <div class="label">How to download and register?</div>
+                        <div class="content">
+                            <p>
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live
+                                the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                                Semantics,
+                                a large
+                                language ocean.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="contentBox">
+                        <div class="label">How to create your paypal account?</div>
+                        <div class="content">
+                            <p>
+                                A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia. It is
+                                a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="contentBox">
+                        <div class="label">How to link your paypal and bank account?</div>
+                        <div class="content">
+                            <p>
+                                When she reached the first hills of the Italic Mountains, she had a last view back on
+                                the
+                                skyline of
+                                her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own
+                                road, the
+                                Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--  -->
+            <h1 class="headings">Gallery</h1>
+            <div class="underline"></div>
             <div class="gallery">
                 <img src="https://preview.colorlib.com/theme/travel2/images/xgal_1.jpg.pagespeed.ic.V12iBwOGIs.webp" />
 
@@ -102,18 +123,24 @@
 
                 <img src="https://preview.colorlib.com/theme/travel2/images/xgal_6.jpg.pagespeed.ic.ElI8ZrRwGr.webp" />
             </div>
-            <iframe src="https://player.vimeo.com/video/342333493?h=090d24ca4c" width="100%" height="360"
-                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div> -->
+            <h1 class="headings">Video</h1>
+            <div class="underline"></div>
+            <div class="you_tube">
+                <iframe src="https://player.vimeo.com/video/342333493?h=090d24ca4c" width="100%" height="360"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
         <!-- form html -->
-        <!-- <div class="form">
+        <div class="form">
+            <h1 class="headings">Form</h1>
+            <div class="underline"></div>
             <form>
-                <div class="name">
-                    <div>
+                <div id="name">
+                    <div class="name_1">
                         <label>First name</label><br>
                         <input id="first_name" type="text" />
                     </div>
-                    <div>
+                    <div class="name_end">
                         <label>Last name</label><br>
                         <input id="last_name" type="text" />
                     </div>
@@ -122,7 +149,7 @@
                 <input id="mail" type="email" />
                 <p class="mail_label">We'll never share your email with anyone else.</p>
                 <label class="mail_label">Password</label><br>
-                <input id="mail" type="password" />
+                <input id="mail" type="password" /><br>
                 <label class="mail_label">Message</label><br>
                 <input id="massage" type="text" />
                 <select class="selcector_box">
@@ -133,7 +160,8 @@
                 <label class="check_box_custom">Custom checkbox</label><br>
                 <input id="Submit_btn" type="submit" value="Submit" />
             </form>
-            <h2>Social Icons</h2>
+            <h1 class="headings">Social Icons</h1>
+            <div class="underline"></div>
             <div id="social_icon">
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZMNNtOhc01gmISFnJU2H1OhRgFZ3rs4OhYw&usqp=CAU" />
@@ -144,60 +172,114 @@
                 <img src="https://svgsilh.com/svg/1088004.svg" />
                 <img src="https://icon-library.com/images/play-video-icon-png/play-video-icon-png-5.jpg" />
             </div>
-            <h2>Slider</h2>
+
+            <h2 class="slider_heading">Slider</h2>
+            <div class="underline_1"></div>
             <div id="slider_box">
-                <div id="slider_1">
-                    <img
-                        src="https://preview.colorlib.com/theme/travel2/images/xperson_2.jpg.pagespeed.ic.mgeTnVW6ZA.webp" />
-                    <h2>Adam Anderson</h2>
-                    <p>There live the blind texts. Separated they live in Bookmarksgrove right at the
-                        coast of the Semantics a large language ocean.
-                    </p>
-                </div>
-                <div id="slider_2">
-                    <img
-                        src="https://preview.colorlib.com/theme/travel2/images/xperson_3.jpg.pagespeed.ic.AKCDWmwHvl.webp" />
-                    <h1>Lukas Devlin</h1>
-                    <p>There live the blind texts. Separated they live in Bookmarksgrove right at the
-                        coast of the Semantics a large language ocean.
-                    </p>
-                </div>
-                <div id="slider_3">
-                    <img
-                        src="https://preview.colorlib.com/theme/travel2/images/xperson_4.jpg.pagespeed.ic.zKDyucUl4V.webp" />
-                    <h1>Adam Anderson</h1>
-                    <p>There live the blind texts. Separated they live in Bookmarksgrove right at the
-                        coast of the Semantics a large language ocean.
-                    </p>
-                </div>
+                <img class="slider_1" />
+                <h2></h2>
+                <p>There live the blind texts. Separated they live in Bookmarksgrove <br>
+                    right at the coast of the Semantics a large language ocean.
+                </p>
             </div>
+
         </div>
-    </div> -->
+    </div>
+    <!-- our team part -->
 
     <!-- our Team work -->
-    <!-- <h1>Our Team</h1>
-<div class="Team_of_Co">
-    <div>
-        <img src="https://preview.colorlib.com/theme/travel2/images/xperson_1.jpg.pagespeed.ic.xtv1fE5u_J.webp"/>
-        <h2>James Watson</h2>
-        <h4>Co-Founder & CEO</h4>
+    <div id="Our_Team_box">
+        <div class="headings_Team_our">
+            <h1>Our Team</h1>
+            <div class="underline_of_our_team"></div>
+        </div>
+        <div id="Team_of_Co">
+            <div class="james">
+                <img
+                    src="https://preview.colorlib.com/theme/travel2/images/xperson_1.jpg.pagespeed.ic.xtv1fE5u_J.webp" />
+                <h2>James Watson</h2>
+                <h4>Co-Founder & CEO</h4>
+            </div>
+            <div class="carl">
+                <img
+                    src="https://preview.colorlib.com/theme/travel2/images/xperson_2.jpg.pagespeed.ic.mgeTnVW6ZA.webp" />
+                <h2>Carl Anderson</h2>
+                <h4>Co-Founder & CEO</h4>
+            </div>
+            <div id="mil">
+                <img
+                    src="https://preview.colorlib.com/theme/travel2/images/xperson_4.jpg.pagespeed.ic.zKDyucUl4V.webp" />
+                <h2>Michelle Allison</h2>
+                <h4>Co-Founder & CEO</h4>
+            </div>
+            <div class="drew">
+                <img
+                    src="https://preview.colorlib.com/theme/travel2/images/xperson_3.jpg.pagespeed.ic.AKCDWmwHvl.webp" />
+                <h2>Drew Wood</h2>
+                <h4>Co-Founder & CEO</h4>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="https://preview.colorlib.com/theme/travel2/images/xperson_2.jpg.pagespeed.ic.mgeTnVW6ZA.webp"/>
-        <h2>Carl Anderson</h2>
-        <h4>Co-Founder & CEO</h4>
-    </div>
-    <div>
-        <img src="https://preview.colorlib.com/theme/travel2/images/xperson_4.jpg.pagespeed.ic.zKDyucUl4V.webp"/>
-        <h2>Michelle Allison</h2>
-        <h4>Co-Founder & CEO</h4>
-    </div>
-    <div>
-        <img src="https://preview.colorlib.com/theme/travel2/images/xperson_3.jpg.pagespeed.ic.AKCDWmwHvl.webp" />
-        <h2>Drew Wood</h2>
-        <h4>Co-Founder & CEO</h4>
-    </div>
-</div> -->
+    <!-- footer -->
+    <footer id="footer">
+        <div class="About_para">
+            <h1>About Colorlib</h1>
+            <p>Far far away, behind the word mountains,
+                far from the <br>countries Vokalia and Consonantia,
+                there live the blind texts.</p>
+            <div>
+                <img class="About_para_logo"
+                    src="https://www.freeiconspng.com/thumbs/logo-twitter-png/cricle-twitter-emblem-png-clipart-8.png">
+                <img class="About_para_logo"
+                    src="https://www.pngitem.com/pimgs/m/82-821814_transparent-ig-png-blue-instagram-icon-png-png.png">
+                <img class="About_para_logo"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-CtTzIPKrHoSPrdJdDGSnaV5SabpaYRQHg&usqp=CAU">
+            </div>
+        </div>
+        <div class="pages_list">
+            <h1>Pages</h1>
+            <ul>
+                <li class="page_list_blog"><a href="#">Blog</a></li>
+                <li class="page_list_blog"><a href="#">About</a></li>
+                <li class="page_list_blog"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="resources_list">
+            <h1>Resources</h1>
+            <ul>
+                <li class="page_list_blog"><a href="#">Blog</a></li>
+                <li class="page_list_blog"><a href="#">About</a></li>
+                <li class="page_list_blog"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="contact_list">
+            <h1>Contact</h1>
+            <ul>
+                <li class="page_list_blog"><img src="https://cdn-icons-png.flaticon.com/512/54/54215.png">info@Colorlib
+                </li>
+                <li class="page_list_blog"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJBgaC6GUStFgyo0cKfQU58dw-gB_ivrdvtQ&usqp=CAU">
+                    +1 222 212 3819</li>
+                <li class="page_list_blog"><img
+                        src="https://i.pinimg.com/originals/b7/02/af/b702afc7b811840ebc49037cdc98bc45.jpg">43 Raymouth
+                    Rd.
+                    Baltemoer, London 3910</li>
+            </ul>
+        </div>
+        <div class="copy_write">
+            <p>
+                Copyright ©2022 All rights reserved | This template is made with by Colorlib
+            </p>
+        </div>
+        <div class="Term_condi">
+            <div class="policy_flex">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <!-- js import  -->
+    <script src="../javaScript/elements.js"></script>
+    <!--  -->
 </body>
-
 </html>
