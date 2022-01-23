@@ -638,3 +638,440 @@ width: 100%;
 
 
 /* nav media end */
+
+/* saurabh css */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#No_of_travels{
+   display: grid;
+   text-align: center;
+   padding: 80px;
+   background-color: rgb(8, 217, 214);
+   color: #ffff;
+   margin-bottom: 20px;
+}
+#No_of_travels h1{
+     font-size: 40px;
+     font-weight: 400;
+     font-family:Lato, sans-serif;
+     text-size-adjust: 100%;
+}
+#No_of_travels p{
+     font-size: 14px;
+     font-weight: 400;
+     font-family:Lato, sans-serif;
+     text-size-adjust: 100%;
+}
+.travels{
+     grid-area: travels;
+}
+.Clients{
+     grid-area: Clients;
+}
+.employees{
+     grid-area: employees;
+}
+.countries{
+     grid-area: countries;
+}
+
+/* guru */
+
+
+
+/* Plan your travel  */
+#plan_your_travel{
+   text-align: center;
+   padding: 80px;
+   background-color: rgb(8, 217, 214);
+   color: #ffff;
+}
+#plan_your_travel h1{
+     font-size: 40px;
+     font-weight: 400;
+     font-family:Lato, sans-serif;
+     text-size-adjust: 100%;
+     margin-bottom: 20px;
+}
+#plan_your_travel p{
+     font-size: 18px;
+     font-weight: 500;
+     font-family:Lato, sans-serif;
+     text-size-adjust: 100%;
+     margin-bottom: 25px;
+}
+#plan_your_travel button{
+     height: 50px;
+     width: 150px;
+     border-radius: 30px;
+     padding: 15px;
+     font-size: 14px;
+     font-weight: 400;
+     font-family:Lato, sans-serif;
+     text-size-adjust: 100%;
+     border: 3px solid white;
+     background-color: rgb(8, 217, 214);
+     color: white;
+     cursor: pointer;
+
+}
+
+/* footer */
+#footer{
+    padding: 60px;
+    display: grid;
+    gap: 20px;
+    background-color: #F8F9FA;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.About_para{
+    grid-area: About_para;
+    margin: 20px;
+}
+.About_para h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.About_para p{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    padding: 8px;
+    padding-left: 0px;
+}
+.About_para_logo{
+   height: 30px;
+   width: 30px;
+}
+.pages_list{
+    grid-area: pages_list;
+    margin: 20px;
+}
+.pages_list h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.page_list_blog{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px;
+    margin-bottom: 10px;
+    text-size-adjust: 100%;
+}
+.pages_list li{
+    list-style-type:none;
+}
+.pages_list a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+}
+.resources_list{
+    grid-area: resources_list;
+    margin: 20px;
+}
+.resources_list h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.resources_list li{
+    list-style-type: none;
+}
+.resources_list a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+}
+
+.contact_list li{
+    list-style-type: none;
+}
+
+.contact_list h1{
+   font-family: Lato, sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px;
+   text-size-adjust: 100%;
+}
+.contact_list{
+      grid-area: contact_list;
+      margin: 20px;
+}
+
+.contact_list img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.copy_write p{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    padding: 8px;
+    padding-left: 15px;
+}
+.Term_condi a{
+    box-sizing: border-box;
+    color: rgb(136, 136, 136);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    padding: 8px;
+    padding-left: 0px;
+}
+.policy_flex{
+    display: flex;
+}
+
+/* service */
+
+.img-row {
+  padding: 70px 0;
+}
+
+.parent-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  justify-content: center;
+}
+
+.row-wrapper {
+  width: 100%;
+  /* padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; */
+}
+
+ .service-row {
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.service-text {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 31%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem !important;
+}
+
+.service-text h2 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.service-bord {
+  content: "";
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 4px;
+  background: #08d9d6;
+}
+
+.service-text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center !important;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+}
+div.img-1 {
+  background-image: url("https://preview.colorlib.com/theme/travel2/images/ximg_3.jpg.pagespeed.ic.gd4lnyCcRC.webp");
+  width: 21vw;
+  height: 60vh;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+}
+.content-card {
+  align-self: center;
+}
+.fa-plane {
+  color: #08d9d6 !important;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  transform: rotate(270deg);
+  margin-bottom: 10px;
+}
+.fa-utensils,
+.fa-swimming-pool,
+.fa-home {
+  color: #08d9d6 !important;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.content-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.content-card p {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 0 !important;
+}
+.card-1 {
+  padding: 22px;
+  background: #f8f9fa;
+  height: 45%;
+  top: 0;
+  margin-bottom: 30px !important;
+  margin: 15px;
+  margin-top: 0px;
+}
+.card-2 {
+  padding: 22px;
+  background: #f8f9fa;
+  height: 48%;
+  top: 0;
+  margin: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+@media screen and (max-width: 986px) {
+  .row-child {
+    width: 35%;
+  }
+  .sym-child {
+    width: 35%;
+  }
+  div.img-1 {
+    display: none;
+  }
+  .service-row .parent-row {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+  }
+  .card-1 {
+    width: 70%;
+    /* size-adjust: 100%;
+    text-size-adjust: 100%; */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bkg-image {
+    width: 100%;
+  }
+}
+
+/* media quaries */
+@media only screen and (max-width: 992px) {
+    #footer{
+        grid-template-areas: 'About_para pages_list' 
+        'resources_list contact_list';
+    }
+    /* counting css */
+     #No_of_travels{
+         grid-template-areas: 'travels Clients' 
+                              'employees countries';
+    }
+    .travels{
+         margin-bottom: 30px;
+    }
+    .Clients{
+         margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #footer{
+        grid-template-areas: 'About_para'
+        'pages_list' 
+        'resources_list' 
+        'contact_list'
+        'copy_write'
+        'Term_condi';
+    }
+    .Term_condi a{
+        padding: 15px;
+    }
+
+    /*counting css*/
+    #No_of_travels{
+         grid-template-areas: 'travels Clients' 
+                              'employees countries';
+    }
+
+    .travels{
+         margin-bottom: 30px;
+    }
+    .Clients{
+         margin-bottom: 30px;
+    }
+   
+}
+
+@media only screen and (min-width: 992px) {
+    #footer{
+        grid-template-areas: 'About_para pages_list resources_list contact_list';
+    }
+    .policy_flex{
+        margin-left: 100%;
+    }
+
+    /* counting css */
+    #No_of_travels{
+         grid-template-areas: 'travels Clients employees countries';
+    }
+}
+

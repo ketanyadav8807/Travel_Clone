@@ -76,3 +76,44 @@ setInterval(() => {
     }
 }, 2000);
 
+// saurabh js
+
+ var i = 100;
+        setInterval(function () {
+            document.querySelector(".travels h1").innerText = i;
+            if (i === 9313) {
+
+            } else {
+                i++;
+            }
+        });
+        8492
+        var j = 50;
+        setInterval(function () {
+            document.querySelector(".Clients h1").innerText = j;
+            if (j === 8492) {
+
+            } else {
+                j++;
+            }
+        });
+        var k = 1;
+        setInterval(function () {
+            document.querySelector(".employees h1").innerText = k;
+            if (k === 100) {
+
+            } else {
+                k++;
+            }
+        });
+
+        var l = 1;
+        setInterval(function () {
+            document.querySelector(".countries h1").innerText = l;
+            if (l === 120) {
+
+            } else {
+                l++;
+            }
+        }); 
+

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display&display=swap");
 
-* {
+* {           
   margin: 0px;
 }
 .nav {
@@ -331,7 +331,7 @@ body {
   .outer-input {
     width: 45%;
     margin: auto;
-    /* border: 2px solid red; */
+    /* border: 2px solid red; */ 
   }
   .select {
     border: 2px solid #e9ecef;
