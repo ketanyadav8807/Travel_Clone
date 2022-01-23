@@ -153,12 +153,13 @@ body{
 .first-form-test{
     display: flex;
     justify-content: center;
-    /* border: 12px solid black; */
+    /* height: 200px; */
+    /* border: 1px solid black; */
 }
 .form-main-div{
     width: 920px;
     /* width: 100%; */
-    height: 134px;
+    height: 140px;
     /* padding: 30px; */
     margin-top: -55px;
     background-color: white;
@@ -167,8 +168,9 @@ body{
 }
 .test-d{
 width: 100%;
-height: 134px;
+height: 140px;
 display: flex;
+/* margin-top: -30px; */
 /* flex-wrap: wrap; */
 /* border: 2px solid green; */
 }
@@ -210,10 +212,11 @@ width: 100%;
     color: white;
     cursor: pointer;
 }
-.white{
+/* .white{
     height: 50px;
     background-color: white;
-}
+    border: 1px solid yellow;
+} */
 /* form end */
 /* popular destination css */
     .popular-destination-main{
@@ -476,13 +479,14 @@ width: 100%;
     }
     .first-form-test{
         display: flex;
+        height: 140px;
         justify-content: center;
-        /* border: 12px solid black; */
+        /* border: 1px solid black; */
     }
    .form-main-div{
         width: 720px;
         /* width: 100%; */
-        height: 134px;
+        height: 180px;
         padding: 30px;
         margin-top: -50px;
         background-color: white;
