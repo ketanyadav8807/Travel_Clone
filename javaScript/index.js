@@ -78,13 +78,13 @@ setInterval(() => {
 
 // saurabh js
 
- var i = 100;
+ var saurabh = 100;
         setInterval(function () {
-            document.querySelector(".travels h1").innerText = i;
-            if (i === 9313) {
+            document.querySelector(".travels h1").innerText = saurabh;
+            if (saurabh === 9313) {
 
             } else {
-                i++;
+                saurabh++;
             }
         });
         8492
