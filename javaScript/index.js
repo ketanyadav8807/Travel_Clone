@@ -49,3 +49,30 @@ setInterval(() => {
         nav_back_h.innerText = "Travel to the most beautiful places in the world, like The Colosseum in Rome|";
     }
 }, 3000);
+
+var slider = 0;
+setInterval(() => {
+    var s1 = document.getElementById("slider_01");
+    var s2 = document.getElementById("slider_02"); 
+    var s3 = document.getElementById("slider_03");
+    
+    if(slider === 0){
+       s1.src = "https://preview.colorlib.com/theme/travel2/images/ximg_1.jpg.pagespeed.ic.LGU4x9ownA.webp";
+       s2.src = "https://preview.colorlib.com/theme/travel2/images/ximg_2.jpg.pagespeed.ic.KB4J-vC9lf.webp";
+       s3.src = "https://preview.colorlib.com/theme/travel2/images/ximg_3.jpg.pagespeed.ic.gd4lnyCcRC.webp";
+       slider++ ;
+    }
+    else if(slider === 1){
+        s3.src = "https://preview.colorlib.com/theme/travel2/images/ximg_1.jpg.pagespeed.ic.LGU4x9ownA.webp";
+        s1.src = "https://preview.colorlib.com/theme/travel2/images/ximg_2.jpg.pagespeed.ic.KB4J-vC9lf.webp";
+        s2.src = "https://preview.colorlib.com/theme/travel2/images/ximg_3.jpg.pagespeed.ic.gd4lnyCcRC.webp";
+        slider++ ;
+    }
+    else {
+        s2.src = "https://preview.colorlib.com/theme/travel2/images/ximg_1.jpg.pagespeed.ic.LGU4x9ownA.webp";
+        s3.src = "https://preview.colorlib.com/theme/travel2/images/ximg_2.jpg.pagespeed.ic.KB4J-vC9lf.webp";
+        s1.src = "https://preview.colorlib.com/theme/travel2/images/ximg_3.jpg.pagespeed.ic.gd4lnyCcRC.webp";
+        slider = 0;
+    }
+}, 2000);
+

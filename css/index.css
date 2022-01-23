@@ -67,6 +67,7 @@ body{
     background-color: white;
     color: black;
     width: 9%;
+    /* changes to width 10px */
     margin-left: -10px;
     height: 155px;
     margin-top: 9.9px;
@@ -214,8 +215,149 @@ width: 100%;
 }
 /* form end */
 /* popular destination css */
-    
+    .popular-destination-main{
+        width: 1140px;
+        height: 620px;
+        margin: 70px auto 0px;
+        /* border: 1px solid red; */
+    }
+    .heading-popular-destination{
+        /* border: 1px solid goldenrod; */
+        text-align: center !important;
+    }
+    .heading-popular-destination > h2{
+        /* border: 1px solid black; */
+        font-size: 36px;
+        font-weight: unset;
+        padding: 2px;
+        color: #212529;
+        font-family: "Playfair Display", serif;
+    }
+    .line-just-below-popular-h2{
+        height: 3.9px;
+        width: 7.5%;
+        background-color: #08d9d6;
+        margin: 10px auto 0px !important;
+    }
+    .popular-destination-below-image{
+        display: flex;
+        width: 95%;
+        margin: 10px auto 0px;
+        height: 490px;
+        /* padding: 5px; */
+        /* border: 1px solid blue; */
+    }
+    .left-arrow{
+        /* border: 1px solid gold; */
+        margin: auto 0px auto -50px !important;
+        font-size: 35px;
+        cursor: pointer;
+        /* font-weight: bold; */
+    }
+    .right-arrow{
+        /* border: 1px solid gold; */
+        margin: auto -50px auto 0px !important;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .popular-destination-below-image > .sliding-image-div{
+        width: 33.5%;
+        height: 410px;
+        margin: auto;
+        /* padding: 15px; */
+        /* border: 1px solid green; */
+    }
+    .popular-destination-below-image > .sliding-image-div > img{
+        width: 100%;
+        height: 100%;
+    }
+    .div{
+        height: 60px;
+        background-color: white;
+    }
 /* popular destination css end*/
+/* video */
+.grand-video-wala{
+    width: 100%;
+    height: 720px;
+}
+.parent-video-wala{
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+}
+.left-child-video{
+    width: 50%;
+}
+.right-child-video{
+    width: 50%;
+}
+.video-above-div{
+    width: 100%;
+    height: 100%;
+}
+.video-above-div > .img-with-play{
+    width: 100%;
+    height: 100%; 
+    background-image: url("https://preview.colorlib.com/theme/travel2/images/ximg_1.jpg.pagespeed.ic.LGU4x9ownA.webp");
+    background-size: cover;
+    background-position: center;
+}
+.video-above-div > .img-with-play > .play-icon{
+    width: 14%;
+    height: 13%;
+    /* position: relative; */
+    margin-top: 43%;
+    margin-left: 41%;
+    border-radius: 50%;
+}
+.left-child-ka-h2{
+    width: 90%;
+    margin-left: 12%;
+    margin-top: 15px;
+    position: relative;
+    top: 0%;
+    right: 0%;
+    font-family: "Playfair Display", serif;
+    text-align: right;
+    /* border: 1px solid red; */
+}
+.left-child-ka-h2 > span{
+    /* border: 1px solid red; */
+    padding: 2.8px;
+    color: white;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.2;
+    background-color: #08D9D6;
+}
+.left-child-video > p{
+    width: 60%;
+    margin-top: 15px;
+    margin-left: 36%;
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.5;
+    /* border: 1px solid red; */
+}
+.get-started-button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: #08d9d6;
+    color: white;
+    cursor: pointer;
+    border: unset;
+
+    margin-top: 20px;
+    margin-left: 71%;
+}
+
+/* video -end */
 @media only screen and (max-width: 992px){
     /* nav start*/
     .nav-right-part{
@@ -262,7 +404,7 @@ width: 100%;
         display: block;
         width: 38px;
         height: 32px;
-        cursor: pointer;
+        cursor: pointer;;
         position: relative;
         font-size: 32px;
         margin-right: 125px;
@@ -394,6 +536,104 @@ width: 100%;
         height: 50px;
         background-color: white;
     }
+
+    /* below slider  */
+    /* .popular-destination-below-image > .sliding-image-div > img{
+        border: 2px soild yellow;
+    }
+    .popular-destination-below-image{
+        border: 1px solid red;
+    } */
+    /* .popular-destination-below-image >  */
+    .popular-destination-below-image > div:nth-child(2){
+        display: none;
+    }
+    .popular-destination-main{
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .popular-destination-below-image{
+        /* border: 1px solid red; */
+        width: 70%;
+    }
+    .popular-destination-below-image > .sliding-image-div{
+        width: 49.5%;
+        height: 400px;
+        margin: auto;
+        /* padding: 15px; */
+        /* border: 1px solid green; */
+    }
+    .popular-destination-below-image > .sliding-image-div > img{
+        width: 100%;
+        height: 100%;
+    }
+    /* below slider end */
+    /* video part start */
+    .grand-video-wala{
+        /* border: 1px solid red; */
+        height: 1100px;
+    }
+    .parent-video-wala{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        height: 100%;
+        /* border: 1px solid blue; */
+    }
+    .left-child-video{
+        width: 100%;
+        /* border: 1px solid yellow; */
+    }
+    .left-child-video > p{
+        width: 100%;
+        margin: unset;
+        text-align: unset;
+        font-size: 14px;
+        margin-top: 15px;
+        /* border: 1px solid red; */
+    }
+    .get-started-button{
+        margin-left: unset;
+    }
+    .left-child-ka-h2{
+        /* border: 2px solid grey; */
+        margin: unset;
+        width: 100%;
+        text-align: unset;
+    }
+    .left-child-ka-h2 > span{
+        margin: unset;
+        font-size: 45px;
+        width: 100%;
+    }
+    .right-child-video{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        /* border: 1px solid green; */
+    }
+
+    .video-above-div{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid yellow; */
+    }
+    .video-above-div > .img-with-play{
+        width: 100%;
+        height: 100%; 
+        background-image: url("https://preview.colorlib.com/theme/travel2/images/ximg_1.jpg.pagespeed.ic.LGU4x9ownA.webp");
+        background-size: cover;
+        background-position: center;
+    }
+    .video-above-div > .img-with-play > .play-icon{
+        width: 14%;
+        height: 13%;
+        /* position: relative; */
+        margin-top: 45%;
+        margin-left: 41%;
+        border-radius: 50%;
+    }
+    /* video part end */
 }
 
 
