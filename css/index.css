@@ -573,6 +573,7 @@ width: 100%;
     .grand-video-wala{
         /* border: 1px solid red; */
         height: 1100px;
+        margin-bottom: 100px;
     }
     .parent-video-wala{
         display: flex;
