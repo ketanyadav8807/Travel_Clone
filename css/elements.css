@@ -130,8 +130,8 @@ body {
     position: fixed;
     top: 0px;
     right: 0px;
-    width: 30%;
-    height: 672px;
+    width: 30.5%;
+    height: 710px;
     background-color: white;
   }
   #cross {
@@ -148,6 +148,8 @@ body {
   }
   .nav-append > ul > li {
     padding: 1px;
+    margin-left: 30px;
+    /* border: 1px solid red; */
   }
   .nav-append > ul > li > a {
     color: black;
