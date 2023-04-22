@@ -4,12 +4,16 @@ const accordion = document.getElementsByClassName("contentBox")
     accordion[i].addEventListener('click',function(){
         this.classList.toggle('active')
     })
- }
+}
 
- //sliding image
- var img = ["https://preview.colorlib.com/theme/travel2/images/xslider-4.jpg.pagespeed.ic.d5f_Nde2nm.webp",
- "https://preview.colorlib.com/theme/travel2/images/xslider-1.jpg.pagespeed.ic.WRHModZqO2.webp",
- "https://preview.colorlib.com/theme/travel2/images/xslider-2.jpg.pagespeed.ic.LFDaLY_9ZA.webp"
+//sliding image
+
+var img = [
+    "/assets/slider-2.jpg.webp",
+    "/assets/slider-1.jpg.webp",
+    "/assets/slider-3.jpg.webp",
+    "/assets/slider-4.jpg.webp",
+    "/assets/slider-5.jpg.webp"
 ];
 
 var i = -1

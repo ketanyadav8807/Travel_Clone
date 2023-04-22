@@ -380,7 +380,7 @@ body {
 /* nav media end */
 
 .bkg-image {
-  background-image: url("https://preview.colorlib.com/theme/travel2/images/xslider-1.jpg.pagespeed.ic.WRHModZqO2.webp");
+  background-image: url("/assets/slider-1.jpg.webp");
 
   height: 700px;
   width: 100%;

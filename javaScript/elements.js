@@ -1,6 +1,7 @@
-var img = ["https://preview.colorlib.com/theme/travel2/images/xslider-4.jpg.pagespeed.ic.d5f_Nde2nm.webp",
-    "https://preview.colorlib.com/theme/travel2/images/xslider-1.jpg.pagespeed.ic.WRHModZqO2.webp",
-    "https://preview.colorlib.com/theme/travel2/images/xslider-2.jpg.pagespeed.ic.LFDaLY_9ZA.webp"
+var img = [
+    "/assets/slider-2.jpg.webp",
+    "/assets/slider-1.jpg.webp",
+    "/assets/slider-3.jpg.webp"
 ];
 
 var i = -1
@@ -23,9 +24,8 @@ console.log(accordion);
  }
 
 // review slider
-var img1 = ["https://preview.colorlib.com/theme/travel2/images/xperson_2.jpg.pagespeed.ic.mgeTnVW6ZA.webp",
-    "https://preview.colorlib.com/theme/travel2/images/xperson_3.jpg.pagespeed.ic.AKCDWmwHvl.webp",
-    "https://preview.colorlib.com/theme/travel2/images/xperson_4.jpg.pagespeed.ic.zKDyucUl4V.webp"]
+var img1 = ["/assets/person_1.jpg.webp",
+    "/assets/person_2.jpg.webp", "/assets/person_3.jpg.webp"]
 var name = ["Adam Anderson", "Lukas Devlin", "Adam Anderson"];
 
 
